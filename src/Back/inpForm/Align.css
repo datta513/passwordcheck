@@ -1,0 +1,23 @@
+.al {
+  border: solid;
+  height: content;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  margin: 50px;
+}
+
+.inph {
+  height: 50px;
+  width: 250px;
+  border: none;
+}
+.btn1 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.btno {
+  background-color: blueviolet;
+  padding: 15px;
+}

@@ -23,3 +23,48 @@
   border-radius: 30px;
   padding: 15px;
 }
+
+.adj {
+  background-color: #454f84;
+  padding: 45px;
+  margin: 20px;
+  border-radius: 15px;
+}
+.dispstyle {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.hed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+}
+.inpstyle {
+  width: 320px;
+  height: 50px;
+}
+.imgstyle {
+  height: 50px;
+  width: 70px;
+}
+.ser {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sdr {
+  display: flex;
+}

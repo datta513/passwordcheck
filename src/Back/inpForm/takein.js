@@ -26,27 +26,12 @@ export default class Inp extends Component {
   render() {
     const {onc} = this.props
     const {site1, webname1, pass1} = this.state
-    let site = ''
-    let webname = ''
-    let passc = ''
     const val = event => {
       event.preventDefault()
       const res = {id: v4(), site1, webname1, pass1}
       onc(res)
+      this.setState(prev => ({site1: '', webname1: '', pass1: ''}))
     }
-
-    const stu = event => {
-      site = site + event.target.value
-    }
-
-    const webn = event => {
-      webname = webname + event.target.value
-    }
-
-    const pass2 = event => {
-      passc = passc + event.target.value
-    }
-
     return (
       <form onSubmit={val} id="submit">
         <div className="al">
@@ -76,7 +61,7 @@ export default class Inp extends Component {
             className="inph"
             type="text"
             id="inpW"
-            placeholder="Enter Website"
+            placeholder="Enter Username"
             value={webname1}
             onChange={this.webn1}
           />
@@ -84,7 +69,7 @@ export default class Inp extends Component {
         <div className="al">
           <img
             src="https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png"
-            alt="website"
+            alt="password"
             height="50"
             className="img1"
           />
@@ -92,15 +77,17 @@ export default class Inp extends Component {
             className="inph"
             id="inpW"
             type="password"
-            placeholder="Enter Website"
+            placeholder="Enter Password"
             value={pass1}
             onChange={this.pass1}
           />
         </div>
-        <div className="btn1">
-          <button type="submit" className="btno">
-            enter
-          </button>
+        <div>
+          <div className="btn1">
+            <button type="submit" className="btno">
+              Add
+            </button>
+          </div>
         </div>
       </form>
     )

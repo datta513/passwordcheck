@@ -57,7 +57,11 @@ export default class Flap extends Component {
         </div>
         <div className="adj">
           <div className="hed">
-            <h1>Your Passwords</h1>
+            <div className="sdr">
+              <h1> Your Passwords</h1>
+              <p> {temlis.length}</p>
+            </div>
+
             <div className="ser">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
@@ -67,16 +71,10 @@ export default class Flap extends Component {
               <input type="search" className="inpstyle" onChange={this.curr} />
             </div>
           </div>
-          <div className="hed">
-            <div className="sdr">
-              <p>your passwords </p>
-              <p>{temlis.length}</p>
-            </div>
-            <div>
-              <input type="checkbox" onClick={this.tog} id="check" />
-              <label htmlFor="check">Show Passwords</label>
-            </div>
-          </div>
+
+          <input type="checkbox" onClick={this.tog} id="check" />
+          <label htmlFor="check">Show Passwords</label>
+
           {temlis.length > 0 ? (
             <ul className="dispstyle">
               {temlis.map(each => (

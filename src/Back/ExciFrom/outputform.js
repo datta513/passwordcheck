@@ -8,7 +8,7 @@ const Res = props => {
     del1(id)
   }
   return (
-    <li>
+    <li className="yur">
       <div className="strict">
         <div className="str ">
           <h1>{webname1[0].toUpperCase()}</h1>
@@ -27,7 +27,7 @@ const Res = props => {
           )}
         </div>
         <div>
-          <button data-testid="delete" onClick={trig}>
+          <button data-testid="delete" onClick={trig} className="btsy">
             <img
               src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png "
               alt="delete"

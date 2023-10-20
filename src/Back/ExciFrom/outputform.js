@@ -11,11 +11,11 @@ const Res = props => {
     <li className="yur">
       <div className="strict">
         <div className="str ">
-          <h1>{webname1[0].toUpperCase()}</h1>
+          <h1>{site1[0].toUpperCase()}</h1>
         </div>
         <div className="con">
-          <p>{webname1}</p>
           <p>{site1}</p>
+          <p>{webname1}</p>
           {sh ? (
             <p>{pass1}</p>
           ) : (

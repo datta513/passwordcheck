@@ -31,7 +31,8 @@ export default class Flap extends Component {
   render() {
     const {clis, show, st} = this.state
     const temp = st.toLowerCase()
-    const temlis = clis.filter(each => each.webname1.includes(temp))
+    console.log(temp)
+    const temlis = clis.filter(each => each.site1.includes(temp))
     return (
       <div className="back">
         <div className="logo">

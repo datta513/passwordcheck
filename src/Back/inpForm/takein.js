@@ -29,7 +29,9 @@ export default class Inp extends Component {
     const val = event => {
       event.preventDefault()
       const res = {id: v4(), site1, webname1, pass1}
-      onc(res)
+      if (site1 !== '' && webname1 !== '' && pass1 !== '') {
+        onc(res)
+      }
       this.setState(prev => ({site1: '', webname1: '', pass1: ''}))
     }
     return (
